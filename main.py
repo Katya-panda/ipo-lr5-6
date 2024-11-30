@@ -9,6 +9,6 @@ with open("output.txt", "w", encoding = "utf-8") as output_file:
         # удаляем пробелы и символы новой строки 
         stripped_line = line.strip()
         # записываем эту строку в обратном порядке в output.txt
-output_file.write("stripped_line[::-1]'\n'")
+    output_file.write(f"{stripped_line[::-1]}")
 # выводим сообщение о завершении записи
 print("Строки записаны в output.txt в обратном порядке.")
